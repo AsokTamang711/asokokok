@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.asoktmg123.HelloController">
+    <center>
+        <TableView fx:id="tableView">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="100"/>
+                <TableColumn fx:id="nameColumn" text="Name" prefWidth="200"/>
+                <TableColumn fx:id="ageColumn" text="Age" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox spacing="10" alignment="CENTER">
+            <TextField fx:id="nameField" promptText="Name"/>
+            <TextField fx:id="ageField" promptText="Age"/>
+            <Button fx:id="addButton" text="Add" onAction="#addStudent"/>
+            <Button fx:id="updateButton" text="Update" onAction="#updateStudent"/>
+            <Button fx:id="deleteButton" text="Delete" onAction="#deleteStudent"/>
+        </HBox>
+    </bottom>
+</BorderPane>
